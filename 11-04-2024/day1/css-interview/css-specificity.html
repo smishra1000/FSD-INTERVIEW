@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css ranking demo</title>
+    <style>
+
+         /* h1{
+            color:blue;
+        }
+        #heading{
+            color:cyan;
+        }
+        h1{
+            color:red
+        }
+        h1{
+            color:pink !important
+        } */
+        h2{
+            font-size: 30px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+       
+        .box1{
+            width: 80%;
+            height: 40%;
+            background-color: green;
+        }
+        html{
+            font-size: 40px;
+        }
+        .parent-para{
+            font-size: 10px;
+        }
+        .para{
+            font-size: 2em;
+        }
+    </style>
+    <!-- inline > id >class>element >*-->
+    <!-- !important -->
+</head>
+<body>
+    <h1 class="head1" id="heading">hello world</h1>
+    <h2>hello heading 2</h2>
+    <div class="box">
+        hi i m inside box absolute/fixed
+    </div>
+    <!---- there are 2 types of units in css absolute, relative units-->
+    <!--- absolute units---px cm m inch-->
+    <!--- raletive units are flexible saclabel units--- em rem percentage-->
+
+    <div class="box1">
+            hi im inisde another box relative
+    </div>
+    <!-- em rem px percentage-->
+
+
+    <div class="parent-para">
+        <p class="para">hi am reltive unit paragraph</p>
+    </div>
+   
+</body>
+</html>

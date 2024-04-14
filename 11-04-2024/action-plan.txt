@@ -1,0 +1,24 @@
+Interview Preparation FSD
+Day 1-2
+HTML
+    1>html intro,doctype,meta tag,types of element,attribute,semantics element
+    2>form element,fieldset,table, ul li
+    3>Browser storage
+    4>svg, canvas
+    5>new features in html
+    6>Explain Geolocation in HTML5
+
+css 
+    1>css selector, position,css specificity,z-index,units,box model,box sizing,
+    2>flex box grid,
+    3>responisve designe,
+    4>css display properties   ----none inline block inline block
+    5>trnsform property css
+    6>opacity: 0 and visibility: hidden 
+    7>What does * { box-sizing: border-box; } do? What are its advantages?
+    8>Pseudo elements and pseudo classes?
+    9>inline and inline-block?
+    10>css preprocessor
+    11>css mixin
+
+DAY 3. javascript
