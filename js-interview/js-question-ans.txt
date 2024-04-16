@@ -1,0 +1,87 @@
+1>Explain the various JavaScript data types?
+ans: Data type is a type of data that can be stored in a variable.
+There are two types of data in JavaScript:
+Primitive data type
+Non-primitive data type
+There are seven primitive data types in javascript:
+
+Number
+String
+Boolean
+BigInt
+Undefined
+Null
+Symbol
+Non-primitive Data Type
+Objects are non-primitive data types in JavaScript. Objects are data that have methods and properties.
+
+2> What's the difference between undefined and null in JavaScript?
+ans: undefined
+When a variable is declared but not initialized, or when a function does not return a value, the variable or the function’s result is undefined.
+Accessing an object property or array element that does not exist also results in undefined.
+It is a primitive value.
+
+null
+Null is an assignment value. It can be assigned to a variable as a representation
+ of no value. 
+
+ 3> What is Closure?
+ ans:A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+  In other words, a closure gives you access to an outer function's scope from 
+  an inner function. In JavaScript, closures are created every time a function 
+  is created, at function creation time.
+  function outside(num) {
+  var rememberedVar = num; // In this example, rememberedVar is the lexical environment that the closure 'remembers'
+  return function inside() { // This is the function which the closure 'remembers'
+    console.log(rememberedVar)
+  }
+}
+
+4> Explain hoisting in JavaScript.
+ans: hoisting allows you to use functions and variables before they're declared
+Variable hoisting with var
+When the interpreter hoists a variable declared with var, it initializes its value to undefined
+console.log(x); // undefined
+var x = 10;
+console.log(x); // 10
+
+Variable hoisting with let and const
+Variables declared with let and const are hoisted but not initialized with a 
+default value. Accessing a let or const variable before it's declared will 
+result in a ReferenceError:
+
+The temporal dead zone
+The reason that we get a reference error when we try to access a let or const 
+variable before its declaration is because of the temporal dead zone (TDZ).
+
+The TDZ starts at the beginning of the variable's enclosing scope and ends 
+when it is declared. Accessing the variable in this TDZ throws a ReferenceError.
+
+Function hoisting in JavaScript
+Function declarations are hoisted, too. Function hoisting allows us to call a 
+function before it is defined
+
+greet(); // "greeting"
+
+function greet() {
+	console.log('greeting');
+}
+Note----function declarations are hoisted, not function expressions
+
+5> 
+ans:Strict mode is a feature in JavaScript that was introduced in ECMAScript 5.
+ It lets you write code in such a way that follows stricter rules.
+ You can use JavaScript strict mode in two ways. You can either enable strict mode for an entire JavaScript file, or you can enable it within the scope of a function.
+
+To enable strict mode for the whole JavaScript file, you simply add the string
+ "use strict" to the top of your code
+
+ // Strict mode
+
+function show() {
+  "use strict"
+  username = "sameer"
+  console.log(username)
+}
+
+show()
