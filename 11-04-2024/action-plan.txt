@@ -28,7 +28,7 @@ DAY 3. javascript
 3>What is Closure?
 4>Explain hoisting in JavaScript.
 5>What is the use of the “strict mode” in JavaScript?
-6>How does prototypal inheritance work in JavaScript?
+6>Explain Constructor function, this,call apply, bind
 7>How does the “this” keyword work in JavaScript?
 8>What are the different ways to create objects in JavaScript?
 9>Explain the concept of currying in JavaScript.
