@@ -46,16 +46,34 @@ let user3 = {
 // takenFn();
 
 
-user1.showName();
+// user1.showName();
 // user1.showName.call(user2)
 // user1.showName.apply(user3)
 
-user1.showName.call(user2)
-user1.showName.apply(user3)
+// user1.showName.call(user2)
+// user1.showName.apply(user3)
 //in bind 
-let loanFn = user1.showName.bind(user2)
-loanFn()
+// let loanFn = user1.showName.bind(user2)
+// loanFn()
 
+
+var userObj = {
+    name:"test1",
+    age:20
+}
+function showUserInfo(msg){
+    console.log(this)
+    console.log(this.name,this.age,msg)
+}
+var userObj2={
+    name:"test2",
+    age:30
+}
+
+showUserInfo.call(userObj,"good  morning")
+showUserInfo.call(userObj2,"good evening")
+
+showUserInfo.apply(userObj,["good night"])
 
 
 
