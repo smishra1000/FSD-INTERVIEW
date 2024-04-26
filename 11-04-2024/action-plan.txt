@@ -51,6 +51,7 @@ DAY 3. javascript
 25>what is generators in javascript
 26>Explain the concept of arrow functions in JavaScript.----read yourself
 27>Explain the concept of event delegation.
+20>Explain the concept of event bubbling and event capturing.
 
 
 scope in js , hoisting conxtet this call apply bind
